@@ -1,4 +1,4 @@
-# Musica
+# Music Jam
 
 **Technical Goals**
 

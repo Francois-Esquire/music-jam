@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "itunes-search-app",
+  "name": "music-jam",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
