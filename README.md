@@ -15,6 +15,12 @@
 - animation and a living UI
 - Probably a lot more than I can think of atm
 
+## Quick Start
+
+- first `git clone git@github.com:Francois-Esquire/music-jam.git`
+- then `npm install`
+- and finally `npm start`
+
 ### Attribution
 
 **Photographic Sources**
