@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, Futura, Helvetica, sans-serif; }
+
+body {
+  margin: 0;
+  background-color: #2c4ece; }
+
+.view {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh; }
+
+.title,
+.search-deck {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+.title {
+  font-weight: normal;
+  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.8);
+  min-height: 240px; }
+  .title > h1 {
+    text-align: center;
+    margin: 1em auto;
+    font-size: 48px;
+    font-weight: lighter;
+    color: #fff; }
+  .title img {
+    margin: 24px; }
+
+.search-deck {
+  align-items: stretch;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  margin-bottom: 4em;
+  background-color: #1b2377;
+  color: #fff; }
+  .search-deck .power-plant {
+    text-align: center;
+    margin: auto; }
+
+.search-party {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: auto;
+  padding: 24px 0; }
+  .search-party button {
+    margin: 12px;
+    width: 100px;
+    min-height: 40px;
+    border: 0;
+    border-radius: 24px;
+    background: none;
+    background-color: #fff;
+    color: #2c4ece;
+    opacity: 1; }
+    .search-party button:hover {
+      background-color: #2c4ece;
+      color: #fff; }
+    .search-party button:disabled {
+      opacity: 0.5; }
+
+.search {
+  height: 40px;
+  margin: auto; }
+  .search.active > input {
+    opacity: 1; }
+  .search > input {
+    min-width: 50%;
+    height: 40px;
+    padding: 12px;
+    font-size: 27px;
+    border: 0;
+    border-radius: 20px;
+    text-align: center;
+    opacity: 0.75;
+    transition: 120ms cubic-bezier(0.075, 0.82, 0.165, 1) opacity; }
+    .search > input:hover, .search > input:focus, .search > input:active {
+      outline: none;
+      opacity: 1; }
+
+.footer {
+  padding: 16px;
+  margin: 2em;
+  border: 0;
+  border-radius: 24px;
+  background-color: #fff; }
+  .footer h6 {
+    margin: auto; }
+
+.content-body {
+  display: flex;
+  flex-flow: row wrap;
+  height: auto;
+  max-width: 1080px;
+  z-index: 10; }
+
+.list {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  list-style: none;
+  padding: 8px;
+  margin: auto;
+  width: 100%; }
+  .list:hover .list-item, .list:active .list-item {
+    will-change: auto; }
+  .list .list-item {
+    margin: 8px;
+    min-width: calc(50% - 16px);
+    max-width: calc(50% - 16px);
+    transition: 130ms ease-in-out all; }
+    @media screen and (max-width: 480px) {
+      .list .list-item {
+        max-width: unset;
+        min-width: 100%; } }
+    .list .list-item:hover, .list .list-item:active {
+      transform: translate3d(0, -12px, 0);
+      box-shadow: 0 3px 12px -4px #3da3fd; }
+
+.empty-list {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  min-height: 50vh;
+  color: #fff; }
+
+.itunes-track {
+  width: 100%;
+  padding: 27px;
+  min-height: 200px;
+  background-color: #fff; }
+  .itunes-track h2 {
+    font-size: 16px; }
+  .itunes-track .track-banner,
+  .itunes-track .track-meta {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; }
+    @media screen and (max-width: 480px) {
+      .itunes-track .track-banner,
+      .itunes-track .track-meta {
+        flex-flow: row wrap; }
+        .itunes-track .track-banner > *,
+        .itunes-track .track-meta > * {
+          margin: auto; } }
