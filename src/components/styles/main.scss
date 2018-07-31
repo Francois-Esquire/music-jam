@@ -1,0 +1,15 @@
+@import "palette";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, Futura, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  // background-color: hsl(112, 82%, 85%);
+  background-color: $blue-jam;
+}

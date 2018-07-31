@@ -1,0 +1,28 @@
+.itunes-track {
+  width: 100%;
+  padding: 27px;
+  min-height: 200px;
+  background-color: #fff;
+  // background-color: #333;
+  // background-color: rgba(0, 0, 0, 0.8);
+  // color: #fff;
+
+  & h2 {
+    font-size: 16px;
+  }
+
+  & .track-banner,
+  & .track-meta {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    @media screen and (max-width: 480px) {
+      flex-flow: row wrap;
+
+      & > * {
+        margin: auto;
+      }
+    }
+  }
+}

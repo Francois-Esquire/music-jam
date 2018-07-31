@@ -1,0 +1,42 @@
+.title,
+.search-deck {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  font-weight: normal;
+  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.8);
+  min-height: 240px;
+
+  & > h1 {
+    text-align: center;
+    margin: 1em auto;
+    font-size: 48px;
+    font-weight: lighter;
+    color: #fff;
+  }
+
+  & img {
+    margin: 24px;
+  }
+}
+
+.search-deck {
+  align-items: stretch;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  margin-bottom: 4em;
+  background-color: #1b2377;
+  color: #fff;
+
+  & .power-plant {
+    text-align: center;
+    margin: auto;
+  }
+}

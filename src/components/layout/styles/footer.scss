@@ -1,0 +1,11 @@
+.footer {
+  padding: 16px;
+  margin: 2em;
+  border: 0;
+  border-radius: 24px;
+  background-color: #fff;
+
+  & h6 {
+    margin: auto;
+  }
+}
